@@ -32,9 +32,17 @@ pub struct Character {
     pub wallet: Wallet,
     /// The character's current health tracker.
     pub health: Health,
+    /// A non-player character's damage immunities.
     pub damage_immunities: Vec<CharacterDamageAdjustment>,
+    /// A non-player character's damage resistances.
     pub damage_resistances: Vec<CharacterDamageAdjustment>,
+    /// A non-player character's damage vulnerabilities.
     pub damage_vulnerabilities: Vec<CharacterDamageAdjustment>,
+    /// A description of the character.
+    pub description: String,
+    // The character's eye color
+    pub eye_color: String,
+    pub exp: i32,
 }
 
 #[derive(Serialize, Deserialize, Clone)]
