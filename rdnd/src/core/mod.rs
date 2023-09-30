@@ -4,5 +4,8 @@ pub mod character;
 pub mod class;
 pub mod dice;
 pub mod health;
+pub mod movement_mode;
+pub mod proficiencies;
+pub mod race;
 pub mod saving_throw;
 pub mod wallet;
