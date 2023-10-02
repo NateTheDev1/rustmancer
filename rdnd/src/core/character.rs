@@ -9,6 +9,8 @@ use super::{
     movement_mode::MovementMode,
     proficiencies::Proficiency,
     race::Race,
+    sense::Sense,
+    skill::Skill,
     wallet::Wallet,
 };
 
@@ -74,6 +76,16 @@ pub struct Character {
     pub proficiency_bonus: i32,
     /// The character's race
     pub race: Race,
+    /// A non-player character's senses.
+    pub senses: Vec<Sense>,
+    /// The character's skills.
+    pub skills: Vec<Skill>,
+    /// The color of the character's skin.
+    pub skin_color: String,
+    /// The player character's movement speed per turn.
+    pub speed: i32,
+    /// The character's size.
+    pub size: String,
 }
 
 #[derive(Serialize, Deserialize, Clone)]

@@ -8,4 +8,7 @@ pub mod movement_mode;
 pub mod proficiencies;
 pub mod race;
 pub mod saving_throw;
+pub mod sense;
+pub mod skill;
+pub mod spell;
 pub mod wallet;
