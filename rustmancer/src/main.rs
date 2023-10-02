@@ -1,3 +1,5 @@
 use rdnd::api::rdnd;
 
-fn main() {}
+fn main() {
+    let game = rdnd::Rdnd::new(None);
+}

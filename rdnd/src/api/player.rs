@@ -2,8 +2,8 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Serialize, Deserialize, Clone)]
 pub struct Player {
-    name: String,
-    character_id: String,
+    pub name: String,
+    pub character_id: String,
 }
 
 impl Player {
